@@ -42,13 +42,13 @@ install -d $RPM_BUILD_ROOT{%{_sysconfdir}/xinetd.d,%{_sbindir}}
 %makeinstall
 install -m755 %{name} $RPM_BUILD_ROOT%{_sbindir}
 bzcat %{SOURCE1} > $RPM_BUILD_ROOT%{_sysconfdir}/xinetd.d/%{name}
-install -d $RPM_BUILD_ROOT%{_localstatedir}/%{name}
+install -d $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %pre
-%_pre_useradd %{name} %{_localstatedir}/%{name} /bin/true
+%_pre_useradd %{name} %{_localstatedir}/lib/%{name} /bin/true
 
 %post
 %_post_service xinetd
@@ -67,5 +67,5 @@ fi
 %doc README CHANGELOG
 %config(noreplace) %{_sysconfdir}/xinetd.d/%{name}
 %{_sbindir}/%{name}
-%{_localstatedir}/%{name}
+%{_localstatedir}/lib/%{name}
 

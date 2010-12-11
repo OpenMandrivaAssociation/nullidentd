@@ -1,6 +1,6 @@
 %define	name	nullidentd
 %define	version	1.0
-%define	release 7
+%define	release 8
 
 Summary:	Minimal identd server implementing the auth protocol (RFC 1413)
 Name:		%{name}

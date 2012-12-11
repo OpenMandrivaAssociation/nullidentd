@@ -1,3 +1,5 @@
 sources:
-  "nullidentd-1.0.tar.bz2:"	d21024805c06470182ddd48354bd6b06229d6d3f
-  "nullidentd.xinetd.bz2:"	7ee95e4cb28a68814af62a07497031895990d260
+  "nullidentd-1.0-gcc4-fixes.patch.bz2": 6749e8707cf2c5ea1e5d4e76c42e6da8c3a30b3e
+  "nullidentd-1.0.tar.bz2": d21024805c06470182ddd48354bd6b06229d6d3f
+  "nullidentd-makefile.patch.bz2": 49eb5d7c0c640cba3c742ccc4879a1d885151254
+  "nullidentd.xinetd.bz2": 7ee95e4cb28a68814af62a07497031895990d260

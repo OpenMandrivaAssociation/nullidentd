@@ -12,7 +12,7 @@ Source0:	http://www.tildeslash.org/nullidentd/%{name}-%{version}.tar.bz2
 Source1:	%{name}.xinetd.bz2
 Patch0:		%{name}-makefile.patch.bz2
 Patch1:		nullidentd-1.0-gcc4-fixes.patch.bz2
-URL:		http://www.tildeslash.org/nullidentd.html
+URL:		https://www.tildeslash.org/nullidentd.html
 Provides:	identd
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires(pre,postun):	rpm-helper

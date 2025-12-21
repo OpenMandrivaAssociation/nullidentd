@@ -17,6 +17,7 @@ Provides:	identd
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires(pre,postun):	rpm-helper
 
+BuildRequires:	make
 %description
 nullidentd is intended to be a bare minimum identd server.
 
